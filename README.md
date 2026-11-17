@@ -1,62 +1,105 @@
-# 🧠 NeuroCogNet – Dementia Detection Using Deep Learning
+# 🧠 NeuroCogNet – AI-Powered Dementia Detection & Awareness Platform
 
-A deep learning-based academic project focused on exploring automated dementia-related image classification using Python and trained neural network models.
+An intelligent deep learning-based web application designed to support dementia stage detection, MRI-based condition comparison, and dementia awareness through separate Doctor and Public User modes.
 
-NeuroCogNet brings together image preprocessing, data augmentation, model training, evaluation, and prediction through a Python-based application.
+NeuroCogNet combines deep learning predictions, visual explanations, downloadable diagnostic reports, and educational resources in one platform.
 
 ---
 
-## 📌 Project Overview
+## 🌟 Project Overview
 
-Dementia-related conditions can affect memory, thinking, and cognitive abilities. This project explores the application of deep learning techniques to image-based classification as an academic learning initiative.
+NeuroCogNet is a deep learning-powered dementia detection platform developed to provide different features based on the selected user mode.
 
-The project includes model development scripts, saved trained models, evaluation utilities, visual outputs, and project documentation.
+When users open the web application, they are welcomed by a home page where they can choose between:
 
-## 🎯 Objectives
+- 👨‍⚕️ **Doctor Login**
+- 🌍 **Public User**
 
-- Explore deep learning techniques for dementia-related image classification.
-- Perform image preprocessing and augmentation.
-- Train and evaluate deep learning models.
-- Experiment with MobileNetV2-based model fine-tuning.
-- Test saved models using image inputs.
-- Develop a Python-based interface for model interaction.
-- Visualize and document project outputs.
+Each mode provides dedicated features to support medical assessment workflows and public awareness.
+
+## 🎯 Key Objectives
+
+- Develop a deep learning-based dementia stage detection system.
+- Provide visual explanations through heatmaps.
+- Display prediction confidence scores.
+- Compare pre-treatment and post-treatment MRI scans.
+- Identify whether the condition has improved, worsened, or remained the same based on model outputs.
+- Generate downloadable PDF reports.
+- Promote dementia awareness through educational content.
+- Provide dietary guidance and food portion information for patients.
+
+## 🚀 Key Features
+
+### 1. 👨‍⚕️ Doctor Mode
+
+A dedicated interface with additional assessment features.
+
+**🧠 Dementia Stage Detection**
+- Upload MRI images for dementia stage prediction.
+- Identify the predicted dementia stage.
+- Display prediction confidence scores.
+- Generate heatmaps to visually highlight relevant image regions.
+
+**🔬 Pre-Treatment vs Post-Treatment MRI Comparison**
+- Upload pre-treatment MRI scans.
+- Upload post-treatment MRI scans.
+- Compare both MRI inputs.
+- Display the comparison outcome:
+  - 🟢 Improved
+  - 🔴 Worsened
+  - 🟡 Same Condition
+
+**📄 Downloadable Diagnosis Report**
+- Generate a detailed PDF report.
+- Include the available prediction and comparison results.
+- Download the report for documentation and reference.
+
+### 2. 🌍 Public User Mode
+
+An educational section designed to improve understanding of dementia and patient care.
+
+**📚 Dementia Awareness**
+- Learn about dementia.
+- Explore relevant educational information.
+- Understand the condition and its impact.
+
+**🥗 Diet & Nutrition Guidance**
+- Explore useful food choices for dementia patients.
+- Learn about dietary recommendations.
+- View suggested daily food portions.
+
+## 🔄 Application Workflow
+
+1. Launch the NeuroCogNet web application.
+2. View the home page.
+3. Select Doctor Login or Public User.
+4. Access the features available in the selected mode.
+5. Doctors can perform dementia stage detection, MRI comparison, and PDF report generation.
+6. Public users can explore dementia awareness and dietary guidance.
 
 ## 🛠️ Tools & Technologies
 
-- **Python** – Core programming language
-- **TensorFlow / Keras** – Deep learning model development
-- **MobileNetV2** – Pretrained model fine-tuning experiments
-- **NumPy** – Numerical operations
-- **Matplotlib** – Visualization
-- **Deep Learning** – Image classification and model experimentation
+- **Programming Language:** Python
+- **Deep Learning:** TensorFlow / Keras
+- **Pre-trained Architecture:** MobileNetV2
+- **Web Application:** Python-based web application
+- **Image Processing:** MRI image preprocessing
+- **Visualization:** Heatmaps and model evaluation visualizations
+- **Reporting:** PDF report generation
 
-## 🔄 Project Workflow
+## 📊 Model Evaluation & Outputs
 
-**Image Dataset → Preprocessing → Data Augmentation → Model Training → Model Evaluation → Prediction → Visualization**
+The project includes model evaluation and visual outputs such as:
 
-## 🧩 Key Components
+- Confusion Matrix
+- Model Performance Graphs
+- Training and Validation Visualizations
+- Dementia Prediction Outputs
+- Heatmap Visualizations
+- MRI Comparison Results
+- Downloadable PDF Report Sample
 
-| Component | Description |
-|---|---|
-| Image Augmentation | Scripts for image augmentation |
-| Model Training | Training and fine-tuning scripts |
-| Model Evaluation | Model evaluation utilities |
-| Model Testing | Testing saved models with image inputs |
-| Web Application | Python-based model interaction |
-| Visualizations | Project figures and output images |
-
-## 🤖 Trained Models
-
-The repository includes the following saved model files:
-
-- `alzheimer_model_cpu.h5`
-- `mymobilenetv2_model_finetuned.h5`
-- `mymobilenetv2_pretrained_finetuned.h5`
-
-These model artifacts are included for academic reference and further experimentation.
-
-## 📂 Repository Structure
+## 📁 Project Structure
 
 ```text
 dementia-detection-using-deep-learning/
@@ -69,43 +112,44 @@ dementia-detection-using-deep-learning/
 ├── augment_moderate_direct.py
 ├── evaluate_model.py
 ├── load_model_test.py
-├── testing.py
 ├── train_model.py
 ├── train_model_pretrained.py
+├── testing.py
 ├── web_app.py
 │
 ├── alzheimer_model_cpu.h5
 ├── mymobilenetv2_model_finetuned.h5
 ├── mymobilenetv2_pretrained_finetuned.h5
 │
-├── NeuroCognitive_Report.pdf
 └── README.md
 ```
 
-## 📊 Project Documentation & Results
-
-- Detailed project documentation is available in `NeuroCognitive_Report.pdf`.
-- Additional supporting documents are available in the `Documents/` folder.
-- Visual outputs and project figures are available in the `figures/` and `images/` folders.
-
 ## 💡 Skills Demonstrated
 
-- Python programming
-- Deep learning fundamentals
-- Image preprocessing and augmentation
-- Transfer learning and model fine-tuning
-- Model evaluation and testing
-- Visualization and documentation
+- Deep Learning
+- Convolutional Neural Networks (CNN)
+- Transfer Learning
+- MobileNetV2
+- Medical Image Classification
+- MRI Image Analysis
+- Model Evaluation
+- Heatmap Visualization
+- Python Development
+- Web Application Development
+- PDF Report Generation
 
 ## ⚠️ Disclaimer
 
-This project is developed for academic and educational purposes only. It is not a clinically validated diagnostic system and must not be used to diagnose dementia or replace professional medical evaluation.
+NeuroCogNet is an academic project developed for educational and research purposes. Its predictions, heatmaps, and MRI comparisons are experimental outputs and should not be considered medical diagnoses or substitutes for professional clinical evaluation. Dietary information is educational and should not replace individualized medical or nutritional advice.
 
-## 👩‍💻 Author
+## 👩‍💻 Developed By
 
-**Sri Rajakavika Palanivel**  
-M.Sc Software Systems
+**Sri Rajakavika Palanivel**
+
+M.Sc. Software Systems
+
+GitHub: [SriRajakavika](https://github.com/SriRajakavika)
 
 ---
 
-⭐ *An academic exploration of deep learning applications in healthcare-related image classification.*
+⭐ If you find this project interesting, feel free to explore the repository!
